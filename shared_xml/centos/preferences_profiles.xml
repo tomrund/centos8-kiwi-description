@@ -1,0 +1,22 @@
+<image>
+    <profiles>
+        <profile name="bios" description="BIOS boot disk image"/>
+        <profile name="uefi" description="UEFI boot disk image"/>
+    </profiles>
+    <preferences profiles="bios">
+        <type image="oem" primary="true" filesystem="ext4" firmware="bios">
+            <bootloader name="grub2" console="serial" timeout="2"/>
+            <oemconfig>
+                <oem-resize>false</oem-resize>
+            </oemconfig>
+        </type>
+    </preferences>
+    <preferences profiles="uefi">
+        <type image="oem" primary="true" filesystem="ext4" firmware="uefi">
+            <bootloader name="grub2" console="serial" timeout="2"/>
+            <oemconfig>
+                <oem-resize>false</oem-resize>
+            </oemconfig>
+        </type>
+    </preferences>
+</image>

@@ -1,0 +1,7 @@
+<image>
+    <packages type="bootstrap">
+        <package name="basesystem"/>
+        <package name="filesystem"/>
+        <package name="libdb-utils"/>
+    </packages>
+</image>

@@ -1,0 +1,28 @@
+<image>
+    <packages type="image">
+        <package name="cloud-utils-growpart"/>
+        <package name="coreutils"/>
+        <package name="dhclient"/>
+        <package name="dnf-plugins-core"/>
+        <package name="e2fsprogs"/>
+        <package name="epel-release"/>
+        <package name="glibc"/>
+        <package name="grub2-efi-x64"/>
+        <package name="grub2-efi-x64-modules"/>
+        <package name="iputils"/>
+        <package name="kernel"/>
+        <package name="kernel-tools"/>
+        <package name="kexec-tools"/>
+        <package name="libsysfs"/>
+        <package name="man-db"/>
+        <package name="NetworkManager"/>
+        <package name="openssh-clients"/>
+        <package name="policycoreutils"/>
+        <package name="selinux-policy"/>
+        <package name="syslinux"/>
+        <package name="util-linux"/>
+        <package name="xfsprogs"/>
+        <package name="yum"/>
+        <package name="yum-utils"/>
+    </packages>
+</image>

@@ -1,0 +1,35 @@
+<image>
+    <packages type="image">
+        <package name="bzip2"/>
+        <package name="ca-certificates"/>
+        <package name="chrony"/>
+        <package name="cifs-utils"/>
+        <package name="cloud-init"/>
+        <package name="curl"/>
+        <package name="gdisk"/>
+        <package name="git"/>
+        <package name="grub2"/>
+        <package name="gzip"/>
+        <package name="htop"/>
+        <package name="jq"/>
+        <package name="less"/>
+        <package name="make"/>
+        <package name="mlocate"/>
+        <package name="mtr"/>
+        <package name="nano"/>
+        <package name="nmap"/>
+        <package name="openssh-server"/>
+        <package name="python3"/>
+        <package name="pv"/>
+        <package name="rsync"/>
+        <package name="screen"/>
+        <package name="shim"/>
+        <package name="sshpass"/>
+        <package name="sudo"/>
+        <package name="systemd"/>
+        <package name="tar"/>
+        <package name="tmux"/>
+        <package name="vim"/>
+        <package name="wget"/>
+    </packages>
+</image>

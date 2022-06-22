@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<image schemaversion="7.4" name="centos8-template">
+    <description type="system">
+        <author>Thomas Rund</author>
+        <contact>trund@datto.com</contact>
+        <specification>Image description for QAPI Nanostack CentOS 8</specification>
+    </description>
+    <preferences>
+        <version>1.0.0</version>
+        <packagemanager>dnf</packagemanager>
+        <locale>en_US</locale>
+        <keytable>us</keytable>
+        <timezone>UTC</timezone>
+        <rpm-check-signatures>false</rpm-check-signatures>
+    </preferences>
+    <include from="dir://shared_xml/centos/preferences_profiles.xml" />
+    <include from="dir://shared_xml/users.xml" />
+    <repository type="rpm-md" alias="Fedora-EPELNext8">
+        <source path="https://download.fedoraproject.org/pub/epel/next/8/Everything/x86_64/"/>
+    </repository>
+    <repository type="rpm-md" alias="Fedora-EPEL8">
+        <source path="https://download.fedoraproject.org/pub/epel/8/Everything/x86_64/"/>
+    </repository>
+    <repository type="rpm-md" alias="CentOS8-Extras">
+        <source path="http://mirror.centos.org/centos/8-stream/extras/x86_64/os/"/>
+    </repository>
+    <repository type="rpm-md" alias="CentOS8-PowerTools">
+        <source path="http://mirror.centos.org/centos/8-stream/PowerTools/x86_64/os/"/>
+    </repository>
+    <repository type="rpm-md" alias="CentOS8-AppStream">
+        <source path="http://mirror.centos.org/centos/8-stream/AppStream/x86_64/os/"/>
+    </repository>
+    <repository type="rpm-md" alias="CentOS8-BaseOS">
+        <source path="http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/"/>
+    </repository>
+    <include from="dir://shared_xml/common_packages.xml" />
+    <include from="dir://shared_xml/centos/image_packages.xml" />
+    <include from="dir://shared_xml/centos/bootstrap_packages.xml" />
+    <packages type="image">
+        <package name="shim-signed"/>
+    </packages>
+</image>
